@@ -16,12 +16,10 @@ public class ClientMail {
 
 	public static void main(String[] args) {
 		production = Boolean.parseBoolean(args[0]);
-		Injector injector = Guice.createInjector(new MailReaderModule(
-				production));
-		InterpreteurLignecommande cli = injector.getInstance(InterpreteurLignecommande.class);
-		cli.nouveauMail(args);
+		Injector injecteur = Guice.createInjector(new MailReaderModule(production));
+		InterpreteurLignecommande interpreteur = injecteur.getInstance(InterpreteurLignecommande.class);
+		
+		interpreteur.nouveauMail(args);
 	}
-
-	
 
 }

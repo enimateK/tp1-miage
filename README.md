@@ -104,6 +104,8 @@ Pour les besoins du TP, nous utilisons ici les notions de Scenario Outline, de D
 3) Ouvrir dans un navigateur `target/cucumber/index.html`
 4) Ajouter des cas de test dans la feature `trier_mail.feature` : faut-il ecrire de nouvelles méthodes de test comme en tests unitaires ?
 
+Non, il suffit d'ajouter des scénarios créés grâce aux annotations : Given, When, Then. Ces scénarios appelleront des méthodes dont les tests unitaires existent déjà, ils ne sont donc pas à créer.
+
 5) optionnel :
 Ecrire un scenario simple au format textuel et les steps correspondants.
 

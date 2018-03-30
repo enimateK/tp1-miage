@@ -57,7 +57,7 @@ public class MailComparator implements Comparator<Mail> {
 	}
 	
 	private int orderBySubject(Mail mail1, Mail mail2) {
-		return mail2.getSujet().compareTo(mail1.getSujet())
+		return mail2.getSujet().compareTo(mail1.getSujet());
 	}
 	
 	private int orderByDate(Mail mail1, Mail mail2) {

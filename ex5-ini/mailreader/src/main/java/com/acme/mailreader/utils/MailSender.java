@@ -9,6 +9,4 @@ public interface MailSender {
 	 * @param mail le mail à envoyer
 	 */
 	void envoyerMail(Mail mail);
-	
-
 }
